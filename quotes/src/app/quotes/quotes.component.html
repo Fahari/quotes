@@ -3,6 +3,6 @@
 <div *ngFor='let quote of quotess;let i=index'>
   <li>{{quote.name}}</li>
   <button (click)='toogleDetails(i)'>Details</button>
-  <app-quotes-details *ngIf="quote.showAuthor" [quote]='quote'></app-quotes-details>
+  <app-quotes-details *ngIf="quote.showAuthor" [quote]='quote' (toDelete)='deletedQuote($event,i)'></app-quotes-details>
   </div>
 </ul>

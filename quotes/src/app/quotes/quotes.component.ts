@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import {Quotes} from '../quotes'
 
 
@@ -15,6 +15,12 @@ export class QuotesComponent implements OnInit {
     new Quotes(3,'Money and success don’t change people; they merely amplify what is already there.','-Will Smith'),
     new Quotes(4,'Everyone thinks of changing the world, but no one thinks of changing himself.','– Leo Tolstoy'),
   ]
+
+  deletedQuote(toDelete,index){
+          if (toDelete){
+              this.quotess.splice(index,1);
+              }
+            }
 
   toogleDetails(index){
           this.quotess[index].showAuthor = !this.quotess[index].showAuthor;
