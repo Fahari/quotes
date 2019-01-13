@@ -16,6 +16,13 @@ export class QuotesComponent implements OnInit {
     new Quotes(4,'Everyone thinks of changing the world, but no one thinks of changing himself.','– Leo Tolstoy'),
   ]
 
+  addNewQuotes(quote){
+        let quoteLength = this.quotess.length;
+        quote.id=quoteLength+1;
+        this.quotess.push(quote)
+
+    }
+
   deletedQuote(toDelete,index){
           if (toDelete){
               this.quotess.splice(index,1);
