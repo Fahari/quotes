@@ -1,4 +1,7 @@
 <hr>
 <ul>
-<li *ngFor='let quote of quotess'>{{quote.name}}</li>
+<div *ngFor='let quote of quotess'>
+  <li>{{quote.name}}</li>
+  <app-quotes-details [quote]='quote'></app-quotes-details>
+  </div>
 </ul>
