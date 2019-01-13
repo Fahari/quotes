@@ -1,7 +1,8 @@
 <hr>
 <ul>
-<div *ngFor='let quote of quotess'>
+<div *ngFor='let quote of quotess;let i=index'>
   <li>{{quote.name}}</li>
-  <app-quotes-details [quote]='quote'></app-quotes-details>
+  <button (click)='toogleDetails(i)'>Details</button>
+  <app-quotes-details *ngIf="quote.showAuthor" [quote]='quote'></app-quotes-details>
   </div>
 </ul>
