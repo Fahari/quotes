@@ -4,7 +4,7 @@
 
  11/January/2019
 
-#### By **Kironji Kevin**
+### Author  **Kironji Kevin**
 
 ## Description
 
@@ -43,15 +43,15 @@
 
 ## Technologies Used
 
-1. Angular
-2. TypeScript
-3. nodejs
-4. watchman
-5. Atom text editor
+1.  Angular
+2.  TypeScript
+3.  nodejs
+4.  watchman
+5.  Atom text editor
 
 ##site
 
-You can access the live project at https://fahari.github.io/quotes/
+You can access the live project at **[Quotes](https://fahari.github.io/quotes/)**
 
 ## Support and contact details
 
@@ -59,6 +59,6 @@ Have a question? Want to report a bug? feeling philanthropic? want to buy some b
 
 ### License
 
-This project is under the [MIT](https://github.com/Fahari/quotes/blob/master/LICENSE) license. Feel free to study and use the code.
+This project is under the **[MIT](https://github.com/Fahari/quotes/blob/master/LICENSE)** license. Feel free to study and use the code.
 
 Copyright (c) 2019 **Kironji Kevin**
