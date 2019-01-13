@@ -10,7 +10,7 @@ export class QuotesFormComponent implements OnInit {
   newQuotes=new Quotes(0,"","");
   @Output() addQuotes=new EventEmitter<Quotes>();
 
-   submitQuotes(){
+   submitQuotes(newQuotes){
        this.addQuotes.emit(this.newQuotes);
    }
   constructor() { }
