@@ -11,7 +11,7 @@
     <!-- <div appHighlighter >
       </div> -->
     <li>{{quote.name}}</li>
-    <button (click)='toogleDetails(i)'>Details</button>
+    <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
     <app-quotes-details *ngIf="quote.showAuthor" [quote]='quote' (toDelete)='deletedQuote($event,i)'></app-quotes-details>
   </div>
 </ul>
