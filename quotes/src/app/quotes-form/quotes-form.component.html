@@ -26,7 +26,7 @@
             <div class="form-group">
                 <label for="Date">Date</label>
                 <br>
-                <input type='date' id="Date" [(ngModel)]="newQuotes.completionDate" name="Date" #Date="ngModel" placeholder="mm/dd/yy" required>
+                <input type='date' id="Date" [(ngModel)]="newQuotes.Datex" name="Date" #Date="ngModel" placeholder="mm/dd/yy" required>
                 <div [hidden]="Date.valid || Date.pristine" class="alert alert-danger">
                     <p>Date is Required</p>
 
