@@ -26,9 +26,9 @@ export class QuotesComponent implements OnInit {
     }
 
   deletedQuote(toDelete,index){
-          if (toDelete){
+
               this.quotess.splice(index,1);
-              }
+            
             }
 
   toogleDetails(index){

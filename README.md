@@ -31,7 +31,7 @@
     $ echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches  && echo 999999 | sudo tee -a  /proc/sys/fs/inotify/max_queued_events && echo 999999 | sudo tee  -a /proc/sys/fs/inotify/max_user_instances && watchman  shutdown-server
 5.  Install Typescript(Superset of JavaScript) and its transpiler with the following command $ npm install -g typescript && $ tsc -v -y
 
-##Setup
+## Setup
 
 1.  Use this command $ git clone <https://github.com/Fahari/quotes> This will clone the projects repository into a local folder on your device.
 2.  Open the files with an editor( preferably Atom. )
@@ -49,7 +49,7 @@
 4.  watchman
 5.  Atom text editor
 
-##site
+## Site
 
 You can access the live project at **[Quotes](https://fahari.github.io/quotes/)**
 
