@@ -8,7 +8,7 @@ import {Quotes} from '../quotes'
 })
 export class QuotesDetailsComponent implements OnInit {
 
-  @Input() quote:Quotes;
+  @Input() quotess:Quotes;
   @Output() toDelete= new EventEmitter<boolean>();
 
   quoteDelete(del:boolean){
@@ -16,6 +16,8 @@ export class QuotesDetailsComponent implements OnInit {
   }
 upVote=0;
 downVote=0;
+
+
 upvote(){
   this.upVote=this.upVote +1;
 }

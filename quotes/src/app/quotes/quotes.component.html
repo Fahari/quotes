@@ -8,10 +8,9 @@
 
 <ul>
   <div *ngFor="let quote of quotess;let i='index'">
-    <!-- <div appHighlighter >
-      </div> -->
-    <b><li>{{quote.name}}</li></b>
+    <b><li id="{{i}}">{{quote.name}}</li></b>
+    <p id="{{i}}" appHighlighter *ngIf="quote.upVote > 0"></p>
     <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
-    <app-quotes-details *ngIf="quote.showAuthor" [quote]='quote' (toDelete)='deletedQuote($event,i)'></app-quotes-details>
+    <app-quotes-details *ngIf="quote.showAuthor" [quotess]='quote' (toDelete)='deletedQuote($event,i)'></app-quotes-details>
   </div>
 </ul>
