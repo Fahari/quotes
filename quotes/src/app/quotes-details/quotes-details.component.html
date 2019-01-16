@@ -1,5 +1,5 @@
 <p>{{quote.author}}</p>
-<p>Uploaded {{quote.Datex|date}} day(s) ago</p>
+<p>Uploaded {{quote.Datex|dateCount}} day(s) ago</p>
 <button class="btn btn-danger"(click) = 'quoteDelete(true)'>Delete Quote</button><br><br>
-<button class="btn btn-basic"(click)="upvote()">upVote</button>  {{upVote}}<br><br>
-<button class="btn btn-basic"(click)="downvote()">downVote</button>  {{downVote}}<br>
+<button class="btn btn-success" (click)="upvote()"><i class="fas fa-thumbs-up"></i></button>  {{upVote}}<br><br>
+<button class="btn btn-danger"(click)="downvote()"><i class="fas fa-thumbs-down"></i></button>  {{downVote}}<br>
